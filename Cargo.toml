@@ -1,4 +1,4 @@
 [workspace]
-members = ["exercises/loops",
+members = ["exercises/functions","exercises/loops",
     "exercises/variables",
 ]
