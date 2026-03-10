@@ -3,11 +3,19 @@
 version = 4
 
 [[package]]
+name = "file-manager"
+version = "0.1.0"
+
+[[package]]
 name = "functions"
 version = "0.1.0"
 
 [[package]]
 name = "loops"
+version = "0.1.0"
+
+[[package]]
+name = "notes-manager"
 version = "0.1.0"
 
 [[package]]
