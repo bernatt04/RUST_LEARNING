@@ -1,3 +1,4 @@
+#[derive(Debug, Clone, Copy)]
 pub enum Suit {
     //enum es solo para decir que suit es un tipo nuevo que solo puede valer estas 4 cosas.
     Hearts,
@@ -6,6 +7,7 @@ pub enum Suit {
     Clubs,
 }
 
+#[derive(Debug, Clone, Copy)]
 pub enum Rank {
     Two,
     Three,

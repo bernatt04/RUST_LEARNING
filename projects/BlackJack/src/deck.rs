@@ -29,9 +29,9 @@ impl Deck {
             Rank::Ace,
         ];
 
-        for suit in suits {
-            for rank in ranks {
-                cards.push(Card::new(suit, rank));
+        for suit in &suits {
+            for rank in &ranks {
+                cards.push(Card::new(*suit, *rank));
             }
         }
 
