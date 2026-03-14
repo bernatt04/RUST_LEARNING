@@ -5,16 +5,22 @@ pub struct Hand {
 }
 
 impl Hand {
+    //create new hand.
     pub fn new() -> Hand {
         Hand { cards: Vec::new() }
     }
 
-    pub fn addCard(&mut self, card: Card) {
+    //add a card to the current hand
+    pub fn add_card(&mut self, card: Card) {
         self.cards.push(card);
     }
 
-    pub fn calculate_score_player() {
+    pub fn calc_score(&self) -> u8 {
         let mut score = 0;
-        let mut aces = 0;
+
+        for card in &self.cards {
+            score += card.value();
+        }
+        return score;
     }
 }

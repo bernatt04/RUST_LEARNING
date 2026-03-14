@@ -1,4 +1,7 @@
 use crate::card::{Card, Rank, Suit};
+use rand::Rng;
+use rand::rng;
+use rand::seq::SliceRandom;
 
 pub struct Deck {
     cards: Vec<Card>,
@@ -36,5 +39,18 @@ impl Deck {
         }
 
         Deck { cards } //this creates the deck
+    }
+
+    //BEWARE,
+    //self = the function keeps the object.
+    //&self = the function only reads the object but cannot modify it
+    //&mut self = the function can read and modify the object.
+    pub fn shuffle(&mut self) {
+        let mut rng = rng();
+        self.cards.shuffle(&mut rng);
+    }
+
+    pub fn deal(&mut self) -> Card {
+        return self.cards.pop().unwrap();
     }
 }

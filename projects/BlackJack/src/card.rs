@@ -24,6 +24,7 @@ pub enum Rank {
     Ace,
 }
 
+#[derive(Debug, Clone, Copy)]
 pub struct Card {
     //Constructor de una card nos dice como construir una card mas adelante le tenemos que asignar un valor para suit y para rank.
     suit: Suit,
