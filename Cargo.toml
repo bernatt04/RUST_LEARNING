@@ -1,4 +1,4 @@
 [workspace]
-members = ["exercises/file-manager","exercises/functions","exercises/loops",
+members = ["exercises/file-manager","exercises/functions", "exercises/hashmaps", "exercises/linkedlist","exercises/loops", "exercises/traits",
     "exercises/variables"
 , "projects/BlackJack", "projects/notes-manager"]
